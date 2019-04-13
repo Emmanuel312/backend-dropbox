@@ -31,4 +31,4 @@ app.use(express.urlencoded({extended: true}))
 app.use('/files', express.static(path.resolve(__dirname,'..','tmp')))
 app.use(require('./routes'))
 
-http.listen(9000, () => console.log('server on'))
+http.listen(process.env.PORT || 9000, () => console.log('server on'))
