@@ -15,7 +15,7 @@ io.on('connection', socket =>
     })
 })
 
-mongoose.connect('mongodb+srv://Emmanuel:n&ry123456@cluster0-pqrut.mongodb.net/test?retryWrites=true',{
+mongoose.connect('mongodb+srv://Emmanuel:<put_senha_here>@cluster0-pqrut.mongodb.net/test?retryWrites=true',{
     useNewUrlParser: true
 })
 
